@@ -28,7 +28,7 @@ origins = [
     ).split(",")
     if x.strip()
 ]
-
+print("FoodShare allowed CORS origins:", origins)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
